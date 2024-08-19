@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 extension VisibilityExtension on Widget {
+  /// Wraps this widget with a [Visibility] widget.
   Widget visible(
     bool visible, {
     Widget replacement = const SizedBox.shrink(),
@@ -21,6 +22,7 @@ extension VisibilityExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with an [Offstage] widget.
   Widget offstage(bool offstage) => Offstage(
         offstage: offstage,
         child: this,

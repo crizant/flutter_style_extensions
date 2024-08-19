@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 extension ClipingExtension on Widget {
+  /// Wraps this widget with a [ClipRect] widget.
   Widget clipRect({
     CustomClipper<Rect>? clipper,
     Clip clipBehavior = Clip.hardEdge,
@@ -11,6 +12,7 @@ extension ClipingExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with a [ClipOval] widget.
   Widget clipOval({
     CustomClipper<Rect>? clipper,
     Clip clipBehavior = Clip.antiAlias,
@@ -21,6 +23,7 @@ extension ClipingExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with a [ClipPath] widget.
   Widget clipPath(
     CustomClipper<Path> clipper, {
     Clip clipBehavior = Clip.antiAlias,
@@ -31,6 +34,7 @@ extension ClipingExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with a [ClipRRect] widget.
   Widget clipRRect({
     BorderRadiusGeometry borderRadius = BorderRadius.zero,
     CustomClipper<RRect>? clipper,

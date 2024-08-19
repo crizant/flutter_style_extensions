@@ -1,11 +1,13 @@
 import 'package:flutter/widgets.dart';
 
 extension PositioningExtension on Widget {
+  /// Wraps this widget with a [Padding] widget.
   Widget margin(EdgeInsetsGeometry margin) => Padding(
         padding: margin,
         child: this,
       );
 
+  /// Wraps this widget with an [Align] widget.
   Widget align(
     Alignment alignment, {
     double? widthFactor,
@@ -18,12 +20,14 @@ extension PositioningExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with a [Center] widget.
   Widget center({double? widthFactor, double? heightFactor}) => Center(
         widthFactor: widthFactor,
         heightFactor: heightFactor,
         child: this,
       );
 
+  /// Wraps this widget with a [Positioned] widget.
   Widget position({
     double? top,
     double? right,
@@ -42,6 +46,7 @@ extension PositioningExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with a [Positioned.fill] widget.
   Widget fillPosition({
     double? left = 0.0,
     double? top = 0.0,
@@ -56,6 +61,7 @@ extension PositioningExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with a [Positioned.directional] widget.
   Widget directionalPosition(
     TextDirection textDirection, {
     double? start,
@@ -76,11 +82,13 @@ extension PositioningExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with a [Positioned.fromRect] widget.
   Widget positionFromRect(Rect rect) => Positioned.fromRect(
         rect: rect,
         child: this,
       );
 
+  /// Wraps this widget with a [Positioned.fromRelativeRect] widget.
   Widget positionFromRelativeRect(RelativeRect rect) =>
       Positioned.fromRelativeRect(
         rect: rect,

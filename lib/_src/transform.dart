@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 extension TransformExtension on Widget {
+  /// Wraps this widget with a [Transform] widget.
   Widget transform(
     Matrix4 transform, {
     Offset? origin,
@@ -17,6 +18,7 @@ extension TransformExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with a [Transform.flip] widget.
   Widget flip({
     bool flipX = false,
     bool flipY = false,
@@ -33,6 +35,7 @@ extension TransformExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with a [Transform.rotate] widget.
   Widget rotate(
     double angle, {
     Offset? origin,
@@ -49,6 +52,7 @@ extension TransformExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with a [Transform.scale] widget. Set the `scale`.
   Widget scale(
     double scale, {
     Offset? origin,
@@ -65,6 +69,7 @@ extension TransformExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with a [Transform.scale] widget. Set the `scaleX` parameter.
   Widget scaleX(
     double scaleX, {
     Offset? origin,
@@ -81,6 +86,7 @@ extension TransformExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with a [Transform.scale] widget. Set the `scaleY` parameter.
   Widget scaleY(
     double scaleY, {
     Offset? origin,
@@ -97,6 +103,8 @@ extension TransformExtension on Widget {
         child: this,
       );
 
+  /// Wraps this widget with a [Transform.scale] widget.
+  /// Set both the `scaleX` and `scaleY` parameters.
   Widget scaleXY(
     double scaleX,
     double scaleY, {
