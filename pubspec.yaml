@@ -1,7 +1,7 @@
 name: flutter_style_extensions
-description: "A new Flutter package project."
+description: "A Flutter package that enhances the readability of Flutter widget styling and reduces boilerplate by leveraging the power of extension methods."
 version: 1.0.0
-homepage:
+homepage: https://github.com/crizant/flutter_style_extensions
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
